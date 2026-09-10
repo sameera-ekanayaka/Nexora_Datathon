@@ -1,10 +1,14 @@
 import sys
 import platform
 
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8")
+
 libs = [
     "pandas", "numpy", "matplotlib", "seaborn",
     "scipy", "sklearn", "xgboost", "lightgbm",
-    "plotly", "polars", "pyarrow", "duckdb"
+    "plotly", "polars", "pyarrow", "duckdb",
+    "statsmodels", "streamlit", "jupyter", "ipykernel"
 ]
 
 print("Python executable:", sys.executable)

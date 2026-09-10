@@ -9,8 +9,13 @@ data/processed/*
 !data/processed/.gitkeep
 
 # Models
+*.pkl
 models/*.pkl
 !models/.gitkeep
+
+# Archives and submission artifacts
+*.zip
+*.tar.gz
 
 # Python
 .venv/
@@ -26,3 +31,4 @@ __pycache__/
 
 # Env secrets
 .env
+challange.md
