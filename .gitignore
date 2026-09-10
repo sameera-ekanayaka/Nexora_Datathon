@@ -1,0 +1,28 @@
+# Raw and intermediate data (too large for git, never commit)
+data/raw/*
+data/interim/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+
+# Processed data - keep folder but ignore large files, allow small samples if needed
+data/processed/*
+!data/processed/.gitkeep
+
+# Models
+models/*.pkl
+!models/.gitkeep
+
+# Python
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+
+# OS/editor junk
+.DS_Store
+.vscode/
+.idea/
+
+# Env secrets
+.env
